@@ -15,6 +15,22 @@ while number != guess:
 # When the above while loop terminates, that means the correct number was guessed!
 print('Correct!')
 
+
+
+
 # Homework: extend the above program so that:
 #   1) it generates a number between 1 and 100,
+
+number = randint(1, 100) 
+print(number) 
+guess = int(input('Guess the number (between 1 and 100): '))
+
 #   2) it gives higher/lower feedback on an incorrect guess.
+while number > guess:
+    print('Incorrect...')  
+    guess = int(input('Try lower: '))  
+while number < guess:
+    print('Incorrect..."')
+    guess = int(input('Try higher: '))  
+
+print('Correct!')
